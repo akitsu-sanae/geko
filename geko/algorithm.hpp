@@ -6,6 +6,8 @@
 #include "algorithm/copy_n.hpp"
 
 #include "algorithm/find.hpp"
+#include "algorithm/find_if.hpp"
+#include "algorithm/find_if_not.hpp"
 
 #include "algorithm/for_each.hpp"
 
