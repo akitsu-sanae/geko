@@ -5,7 +5,7 @@ namespace geko{
 namespace algorithm{
 
 template<class InputIt,class OutputIt>
-constexpr OutputIt
+inline constexpr OutputIt
 copy(InputIt first,InputIt last,OutputIt dist)
 {
     while(first != last){
