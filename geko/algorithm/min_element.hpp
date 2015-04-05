@@ -30,6 +30,7 @@ min_element(
     ++first;
     while(first!=last){
         if(comp(*min_it,*first))min_it = first;
+        ++first;
     }
     return first;
 }

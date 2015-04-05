@@ -30,6 +30,7 @@ max_element(
     ++first;
     while(first!=last){
         if(comp(*max_it,*first))max_it = first;
+        ++first;
     }
     return first;
 }
