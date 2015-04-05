@@ -9,6 +9,9 @@
 #include "algorithm/find_if.hpp"
 #include "algorithm/find_if_not.hpp"
 
+#include "algorithm/count.hpp"
+#include "algorithm/count_if.hpp"
+
 #include "algorithm/max_element.hpp"
 #include "algorithm/min_element.hpp"
 
