@@ -9,6 +9,8 @@
 #include "algorithm/find_if.hpp"
 #include "algorithm/find_if_not.hpp"
 
+#include "algorithm/search.hpp"
+
 #include "algorithm/count.hpp"
 #include "algorithm/count_if.hpp"
 
