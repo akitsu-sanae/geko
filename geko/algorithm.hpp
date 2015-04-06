@@ -5,6 +5,9 @@
 #include "algorithm/copy_if.hpp"
 #include "algorithm/copy_n.hpp"
 
+#include "algorithm/fill.hpp"
+#include "algorithm/fill_n.hpp"
+
 #include "algorithm/find.hpp"
 #include "algorithm/find_if.hpp"
 #include "algorithm/find_if_not.hpp"
