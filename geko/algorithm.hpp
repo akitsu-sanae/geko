@@ -1,6 +1,10 @@
 #ifndef GEKO_ALGORITHM_HPP
 #define GEKO_ALGORITHM_HPP
 
+#include "algorithm/all_of.hpp"
+#include "algorithm/any_of.hpp"
+#include "algorithm/none_of.hpp"
+
 #include "algorithm/copy.hpp"
 #include "algorithm/copy_if.hpp"
 #include "algorithm/copy_n.hpp"
