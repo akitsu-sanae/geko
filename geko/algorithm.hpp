@@ -24,5 +24,7 @@
 
 #include "algorithm/for_each.hpp"
 
+#include "algorithm/transform.hpp"
+
 #endif
 
