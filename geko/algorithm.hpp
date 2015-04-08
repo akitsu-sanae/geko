@@ -33,5 +33,8 @@
 
 #include "algorithm/transform.hpp"
 
+#include "algorithm/accumulate.hpp"
+#include "algorithm/iota.hpp"
+
 #endif
 
