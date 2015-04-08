@@ -21,6 +21,9 @@
 #include "algorithm/count.hpp"
 #include "algorithm/count_if.hpp"
 
+#include "algorithm/min.hpp"
+#include "algorithm/max.hpp"
+
 #include "algorithm/max_element.hpp"
 #include "algorithm/min_element.hpp"
 
