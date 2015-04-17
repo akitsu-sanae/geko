@@ -17,6 +17,8 @@
 #include "algorithm/find_if_not.hpp"
 
 #include "algorithm/find_first_of.hpp"
+#include "algorithm/find_end.hpp"
+
 #include "algorithm/search.hpp"
 
 #include "algorithm/count.hpp"
