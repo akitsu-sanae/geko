@@ -8,6 +8,8 @@
 #ifndef GEKO_TYPE_TRAITS_ADD_CV_HPP
 #define GEKO_TYPE_TRAITS_ADD_CV_HPP
 
+#include <geko/type_traits/remove_cv.hpp>
+
 namespace geko {
 namespace type_traits {
 
