@@ -9,6 +9,7 @@
 #define GEKO_TYPE_TRAITS_HPP
 
 #include <geko/type_traits/integral_constant.hpp>
+#include <geko/type_traits/is_same.hpp>
 #include <geko/type_traits/add_cv.hpp>
 
 #endif
