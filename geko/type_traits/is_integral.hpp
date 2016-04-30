@@ -9,6 +9,7 @@
 #define GEKO_TYPE_TRAITS_IS_INTEGRAL_HPP
 
 #include <limits>
+#include <geko/type_traits/integral_constant.hpp>
 
 namespace geko {
 namespace type_traits {
