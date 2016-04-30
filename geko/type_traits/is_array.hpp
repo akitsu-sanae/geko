@@ -5,22 +5,26 @@
   file LICENSE or copy at http://www.boost.org/LICENSE_1_0.txt)
 ============================================================================*/
 
-#ifndef GEKO_TYPE_TRAITS_IS_VOID_HPP
-#define GEKO_TYPE_TRAITS_IS_VOID_HPP
+#ifndef GEKO_TYPE_TRAITS_IS_ARRAY_HPP
+#define GEKO_TYPE_TRAITS_IS_ARRAY_HPP
 
-#include <geko/type_traits/integral_constant.hpp>
+#include <array>
+#include <geko/type_traits/integral_constant/hpp>
 
 namespace geko {
 namespace type_traits {
 
 template<typename T>
-struct is_void : geko::type_traits::is_same<
-                 void,
-                 typename geko::type_traits::remove_cv<T>::type>
-{};
+struct is_array : geko::type_traits::false_type {};
 
 template<typename T>
-constexpr bool is_void_v = is_void<T>::value;
+struct is_array<T[]> : geko::type_traits::true_type {};
+
+template<typename T, std::size_t N>
+struct is_array<T[N]> : geko::type_traits::true_type {};
+
+template<typename T, std::size_t N>
+struct is_array<std::array<T, N>> : geko::type_traits::true_type {};
 
 }
 }

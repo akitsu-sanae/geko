@@ -16,6 +16,7 @@
 #include <geko/type_traits/is_null_pointer.hpp>
 #include <geko/type_traits/is_integral.hpp>
 #include <geko/type_traits/is_floating_point.hpp>
+#include <geko/type_traits/is_array.hpp>
 
 #endif
 
