@@ -8,7 +8,8 @@
 #ifndef GEKO_TYPE_TRAITS_IS_VOID_HPP
 #define GEKO_TYPE_TRAITS_IS_VOID_HPP
 
-#include <geko/type_traits/integral_constant.hpp>
+#include <geko/type_traits/is_same.hpp>
+#include <geko/type_traits/remove_cv.hpp>
 
 namespace geko {
 namespace type_traits {
