@@ -20,7 +20,10 @@
 #include <geko/type_traits/is_enum.hpp>
 #include <geko/type_traits/is_union.hpp>
 #include <geko/type_traits/is_class.hpp>
-
+#include <geko/type_traits/is_function.hpp>
+#include <geko/type_traits/is_pointer.hpp>
+#include <geko/type_traits/is_lvalue_reference.hpp>
+#include <grko/type_traits/is_rvalue_reference.hpp>
 
 #endif
 
