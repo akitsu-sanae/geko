@@ -17,6 +17,10 @@
 #include <geko/type_traits/is_integral.hpp>
 #include <geko/type_traits/is_floating_point.hpp>
 #include <geko/type_traits/is_array.hpp>
+#include <geko/type_traits/is_enum.hpp>
+#include <geko/type_traits/is_union.hpp>
+#include <geko/type_traits/is_class.hpp>
+
 
 #endif
 
