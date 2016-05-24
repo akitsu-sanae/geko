@@ -8,43 +8,43 @@
 #ifndef GEKO_ALGORITHM_HPP
 #define GEKO_ALGORITHM_HPP
 
-#include "algorithm/all_of.hpp"
-#include "algorithm/any_of.hpp"
-#include "algorithm/none_of.hpp"
+#include <geko/algorithm/all_of.hpp>
+#include <geko/algorithm/any_of.hpp>
+#include <geko/algorithm/none_of.hpp>
 
-#include "algorithm/copy.hpp"
-#include "algorithm/copy_if.hpp"
-#include "algorithm/copy_n.hpp"
+#include <geko/algorithm/copy.hpp>
+#include <geko/algorithm/copy_if.hpp>
+#include <geko/algorithm/copy_n.hpp>
 
-#include "algorithm/fill.hpp"
-#include "algorithm/fill_n.hpp"
+#include <geko/algorithm/fill.hpp>
+#include <geko/algorithm/fill_n.hpp>
 
-#include "algorithm/find.hpp"
-#include "algorithm/find_if.hpp"
-#include "algorithm/find_if_not.hpp"
+#include <geko/algorithm/find.hpp>
+#include <geko/algorithm/find_if.hpp>
+#include <geko/algorithm/find_if_not.hpp>
 
-#include "algorithm/find_first_of.hpp"
-#include "algorithm/find_end.hpp"
+#include <geko/algorithm/find_first_of.hpp>
+#include <geko/algorithm/find_end.hpp>
 
-#include "algorithm/search.hpp"
+#include <geko/algorithm/search.hpp>
 
-#include "algorithm/count.hpp"
-#include "algorithm/count_if.hpp"
+#include <geko/algorithm/count.hpp>
+#include <geko/algorithm/count_if.hpp>
 
-#include "algorithm/min.hpp"
-#include "algorithm/max.hpp"
+#include <geko/algorithm/min.hpp>
+#include <geko/algorithm/max.hpp>
 
-#include "algorithm/max_element.hpp"
-#include "algorithm/min_element.hpp"
+#include <geko/algorithm/max_element.hpp>
+#include <geko/algorithm/min_element.hpp>
 
-#include "algorithm/equal.hpp"
+#include <geko/algorithm/equal.hpp>
 
-#include "algorithm/for_each.hpp"
+#include <geko/algorithm/for_each.hpp>
 
-#include "algorithm/transform.hpp"
+#include <geko/algorithm/transform.hpp>
 
-#include "algorithm/accumulate.hpp"
-#include "algorithm/iota.hpp"
+#include <geko/algorithm/accumulate.hpp>
+#include <geko/algorithm/iota.hpp>
 
 #endif
 

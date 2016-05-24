@@ -10,7 +10,7 @@
 #ifndef GEKO_ALGORITHM_FIND_END_HPP
 #define GEKO_ALGORITHM_FIND_END_HPP
 
-#include "search.hpp"
+#include <geko/algorithm/search.hpp>
 
 namespace geko{
 namespace algorithm{
