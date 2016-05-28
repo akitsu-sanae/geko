@@ -9,7 +9,7 @@
 #define GEKO_TYPE_TRAITS_IS_ARRAY_HPP
 
 #include <array>
-#include <geko/type_traits/integral_constant/hpp>
+#include <geko/type_traits/integral_constant.hpp>
 
 namespace geko {
 namespace type_traits {
