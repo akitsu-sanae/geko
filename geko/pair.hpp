@@ -19,6 +19,8 @@ struct pair {
     using second_type = T2;
 
     // ctor
+    constexpr pair(){}
+
     template<typename T, typename U>
     constexpr pair(T const& f, U const& s) :
         first(f),
@@ -59,7 +61,17 @@ struct pair {
         return *this;
     }
     template<typename T, typename U>
-    pair<first_type, second_type> operator=(pair<T, U> const&& rhs) {
+    pair<first_type, second_type> operator=(pair<T, U>&& rhs) {
+        first = std::move(rhs.first);
+        second = std::move(rhs.second);
+        return *this;
+    }
+    pair<first_type, second_type>& operator=(pair<first_type, second_type> const& rhs) {
+        first = rhs.first;
+        second = rhs.second;
+        return *this;
+    }
+    pair<first_type, second_type>& operator=(pair<first_type, second_type>&& rhs) {
         first = std::move(rhs.first);
         second = std::move(rhs.second);
         return *this;
