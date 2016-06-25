@@ -11,7 +11,7 @@ file LICENSE or copy at http://www.boost.org/LICENSE_1_0.txt)
 namespace geko {
 namespace functional {
 
-template<typename = void>
+template<typename T = void>
 struct minus {
     using first_argument_type = T;
     using second_argument_type = T;

@@ -16,7 +16,7 @@ struct not_equal_to {
     using first_arument_type = T;
     using second_arugment_type = T;
     using result_type = bool;
-    constexpr result_type operato()(T const& lhs, T const& rhs) const {
+    constexpr result_type operator()(T const& lhs, T const& rhs) const {
         return lhs != rhs;
     }
 };
@@ -25,7 +25,7 @@ template<>
 struct equal_to<void> {
     using is_transparent = void;
     template<typename T, typename U>
-    auto operato()(T&& lhs, U&& rhs) const {
+    auto operator()(T&& lhs, U&& rhs) const {
         return lhs != rhs;
     }
 };
