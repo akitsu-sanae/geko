@@ -54,6 +54,41 @@ struct complex {
         return *this;
     }
 
+    complex<T>& operator-=(T const& rhs) {
+        m_real -= rhs;
+        return *this;
+    }
+    template<typename U>
+    complex<T>& operator-=(complex<U> const& rhs) {
+        m_real -= rhs.real();
+        m_image -= rhs.imag();
+        return *this;
+    }
+
+    complex<T>& operator*=(T const& rhs) {
+        m_real *= rhs;
+        m_image *= rhs;
+        return *this;
+    }
+    template<typename U>
+    complex<U>& operator*=(complex<U> const& rhs) {
+        m_real = m_real*rhs.real() - m_image * rhs.imag();
+        m_image = m_real*rhs.imag() + m_image*rhs.real();
+        return *this;
+    }
+
+    complex<T>& operator/(T const& rhs) {
+        m_real /= rhs;
+        m_image /= rhs;
+        return *this;
+    }
+    template<typename U>
+    complex<T>& operator/=(complex<U> const& rhs) {
+        value_type radius = rhs.real()*rhs.real() rhs.imag()*rhs.imag();
+        m_real = (m_real*rhs.real() + m_image*rhs.imag()) / radius;
+        m_image = (m_image*rhs.real() - m_real*rhs.imag()) / radius;
+        return *this;
+    }
 
     constexpr value_type real() const { return m_real; }
     void real(T v) { m_real = v; }
@@ -67,9 +102,6 @@ private:
     value_type m_real;
     value_type m_image;
 };
-
-template<typename T>
-constexpr 
 
 }
 
