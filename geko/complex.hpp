@@ -8,6 +8,8 @@
 #ifndef GEKO_COMPLEX_HPP
 #define GEKO_COMPLEX_HPP
 
+#include <cmath>
+
 namespace geko {
 
 template<typename T>
@@ -102,6 +104,31 @@ private:
     value_type m_real;
     value_type m_image;
 };
+
+template<typename T>
+inline constexpr T real(complex<T> const& x) {
+    return x.real();
+}
+
+template<typename T>
+inline constexpr T imag(complex<T> const& x) {
+    return x.imag();
+}
+
+template<typename T>
+inline constexpr T abs(complex<T> const& x) {
+    return std::sqrt(x.real()*x.real() + x.imag()*x.imag());
+}
+
+template<typename T>
+inline constexpr T arg(complex<T> const& x) {
+    return std::atan2(x.imag(), x.real());
+}
+
+template<typename T>
+inline constexpr T conj(complex<T> const& x) {
+    return complex<T>{x.real(), -x.imag()};
+}
 
 }
 
