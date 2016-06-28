@@ -43,8 +43,5 @@
 
 #include <geko/algorithm/transform.hpp>
 
-#include <geko/algorithm/accumulate.hpp>
-#include <geko/algorithm/iota.hpp>
-
 #endif
 
