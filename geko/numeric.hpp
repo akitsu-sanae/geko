@@ -11,6 +11,7 @@
 #include <geko/numeric/accumulate.hpp>
 #include <geko/numeric/inner_producct.hpp>
 #include <geko/numeric/adjacent_difference.hpp>
+#include <geko/numeric/partial_sum.hpp>
 
 #endif
 
