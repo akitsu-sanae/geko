@@ -5,14 +5,24 @@
   file LICENSE or copy at http://www.boost.org/LICENSE_1_0.txt)
 ============================================================================*/
 
-#ifndef GEKO_NUMERIC_HPP
-#define GEKO_NUMERIC_HPP
+#ifndef GEKO_NUMERIC_IOTA_HPP
+#define GEKO_NUMERIC_IOTA_HPP
 
-#include <geko/numeric/accumulate.hpp>
-#include <geko/numeric/inner_producct.hpp>
-#include <geko/numeric/adjacent_difference.hpp>
-#include <geko/numeric/partial_sum.hpp>
-#include <geko/numeric/iota.hpp>
+namespace geko{
+namespace numeric {
+
+template<class ForwardIt,class T>
+inline void iota(ForwardIt first, ForwardIt last, T value){
+    while (first != last) {
+        *first = value;
+        ++first;
+        ++value;
+    }
+}
+
+}   // namespace algorithm
+}   // namespace geko
+
 
 #endif
 
