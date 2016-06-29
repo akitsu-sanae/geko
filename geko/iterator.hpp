@@ -9,5 +9,6 @@
 #define GEKO_ITERATOR_HPP
 
 #include <geko/iterator/tags.hpp>
+#include <geko/iterator/iterator_traits.hpp>
 
 #endif
