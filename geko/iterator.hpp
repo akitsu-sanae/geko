@@ -10,5 +10,6 @@
 
 #include <geko/iterator/tags.hpp>
 #include <geko/iterator/iterator_traits.hpp>
+#include <geko/iterator/iterator.hpp>
 
 #endif
