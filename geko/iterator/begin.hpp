@@ -5,16 +5,25 @@
   file LICENSE or copy at http://www.boost.org/LICENSE_1_0.txt)
 ============================================================================*/
 
-#ifndef GEKO_ITERATOR_HPP
-#define GEKO_ITERATOR_HPP
+#ifndef GEKO_ITERATOR_BEGIN_HPP
+#define GEKO_ITERATOR_BEGIN_HPP
 
-#include <geko/iterator/tags.hpp>
-#include <geko/iterator/iterator_traits.hpp>
-#include <geko/iterator/iterator.hpp>
-#include <geko/iterator/reverse_iterator.hpp>
-#include <geko/iterator/move_iterator.hpp>
+#include <cstddef>
 
-#include <geko/iterator/begin.hpp>
-#include <geko/iterator/end.hpp>
+namespace geko {
+namespace iterator {
+
+template<typename Con>
+inline auto begin(Con& c) { return c.begin(); }
+
+template<typename Con>
+inline auto begin(Con const& c) { return c.begin(); }
+
+template<typename T, std::size_t N>
+constexpr inline T* begin(T (&arr)[N]) noexcept { return arr; }
+
+}
+}
 
 #endif
+
