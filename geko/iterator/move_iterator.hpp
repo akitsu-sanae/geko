@@ -8,6 +8,9 @@
 #ifndef GEKO_ITERATOR_MOVE_ITERATOR_HPP
 #define GEKO_ITERATOR_MOVE_ITERATOR_HPP
 
+#include <geko/iterator/iterator.hpp>
+#include <geko/iterator/iterator_traits.hpp>
+
 namespace geko {
 namespace iterator {
 
