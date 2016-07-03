@@ -8,8 +8,7 @@
 #ifndef GEKO_NUMERIC_PARTIAL_SUM_HPP
 #define GEKO_NUMERIC_PARTIAL_SUM_HPP
 
-// TODO: use my geko.iterator
-#include <iterator>
+#include <geko/iterator/iterator_traits.hpp>
 #include <geko/functional/plus.hpp>
 
 namespace geko {
@@ -20,7 +19,7 @@ inline OutputIt partial_sum(InputIt first, InputIt last, OutputIt result, Binary
     if (first == last)
         return result;
 
-    using value_type = std::iterator_traits<InputIt>::value_type value_type;
+    using value_type = geko::iterator::iterator_traits<InputIt>::value_type value_type;
     value_type val = *first;
     *result = val;
     first++;
@@ -38,7 +37,7 @@ template<typename InputIt, typename OutputIt>
 inline OutputIt partial_sum(
         InputIt first, InputIt last,
         OutputIt result) {
-    using value_type = std::iterator_traits<InputIt>::value_type;
+    using value_type = geko::iterator::iterator_traits<InputIt>::value_type;
     return partial_sum(first, last, result, geko::functional::plus<value_type>());
 }
 

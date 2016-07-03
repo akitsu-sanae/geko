@@ -8,8 +8,7 @@
 #ifndef GEKO_NUMERIC_ADJACENT_DIFFERENCE_HPP
 #define GEKO_NUMERIC_ADJACENT_DIFFERENCE_HPP
 
-// TODO: use my geko.iterator
-#include <type_traits>
+#include <geko/iterator/iterator_traits.hpp>
 #include <geko/functional/minus.hpp>
 
 namespace geko {
@@ -21,7 +20,7 @@ inline OutputIt adjacent_difference(
         OutputIt result,
         BinaryOp op) {
 
-    using value_type = typename std::iterator_traits<InputIt>:value_type;
+    using value_type = typename geko::iterator::iterator_traits<InputIt>:value_type;
 
     if (first == last)
         return result;
@@ -42,7 +41,7 @@ template<typename InputIt, typename OutputIt>
 inline OutputIt adjacent_difference(
         InputIt first, InputIt last,
         OuputIt result) {
-    using value_type = std::iterator_traits<InputIt>::value_type;
+    using value_type = geko::iterator::iterator_traits<InputIt>::value_type;
     return adjacent_difference(first, last, result, geko::functional::minus<value_type>());
 }
 
