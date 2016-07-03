@@ -47,6 +47,11 @@ protected:
     container_type* container;
 };
 
+template<typename Container>
+inline constexpr back_insert_iterator<Container>
+back_inserter(Container& c) {
+    return back_insert_iterator<Container>(c);
+}
 
 }
 }
