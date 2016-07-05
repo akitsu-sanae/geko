@@ -49,5 +49,10 @@ protected:
     typename container_type::iterator iter;
 };
 
+template<typename Container>
+inline constexpr insert_iterator<Container> inserter(Container& c, typename Container::iterator i) {
+    return insert_iterator<Container>(c, i);
+}
+
 #endif
 
