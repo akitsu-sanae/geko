@@ -8,7 +8,7 @@
 #ifndef GEKO_ITERATOR_FRONT_INSERT_ITERATOR_HPP
 #define GEKO_ITERATOR_FRONT_INSERT_ITERATOR_HPP
 
-#include <memory> // for std::addressof
+#include <geko/memory/addressof.hpp>
 #include <geko/iterator/tags.hpp>
 #include <geko/iterator/iterator.hpp>
 
@@ -26,7 +26,7 @@ struct front_insert_iterator :
 
     // ctor
     explicit front_insert_iterator(container_type& c) :
-        container(std::addressof(c))
+        container(geko::memory::addressof(c))
     {}
 
     // operators

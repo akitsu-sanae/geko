@@ -8,7 +8,7 @@
 #ifndef GEKO_ITERATOR_BACK_INSERT_ITERATOR_HPP
 #define GEKO_ITERATOR_BACK_INSERT_ITERATOR_HPP
 
-#include <memory> // for std::addressof
+#include <geko/memory/addressof.hpp>
 #include <geko/iterator/tags.hpp>
 #include <geko/iterator/iterator.hpp>
 
@@ -26,7 +26,7 @@ struct back_insert_iterator :
 
     // ctor
     explicit back_insert_iterator(containerr_type& c) :
-        container(std::addressof(c))
+        container(geko::memory::addressof(c))
     {}
 
     // operators
