@@ -47,6 +47,12 @@ protected:
     container_type* container;
 };
 
+template<typename Container>
+inline constexpr front_insert_iterator<Container>
+front_insert_iterator(Container& c) {
+    return front_insert_iterator<Container>(c);
+}
+
 }
 }
 
