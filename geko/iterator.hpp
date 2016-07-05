@@ -15,6 +15,7 @@
 #include <geko/iterator/move_iterator.hpp>
 #include <geko/iterator/back_insert_iterator.hpp>
 #include <geko/iterator/front_insert_iterator.hpp>
+#include <geko/iterator/insert_iterator.hpp>
 
 #include <geko/iterator/begin.hpp>
 #include <geko/iterator/end.hpp>
