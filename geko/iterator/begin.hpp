@@ -14,13 +14,18 @@ namespace geko {
 namespace iterator {
 
 template<typename Con>
-inline auto begin(Con& c) { return c.begin(); }
+inline constexpr auto begin(Con& c) { return c.begin(); }
 
 template<typename Con>
-inline auto begin(Con const& c) { return c.begin(); }
+inline constexpr auto begin(Con const& c) { return c.begin(); }
 
 template<typename T, std::size_t N>
-constexpr inline T* begin(T (&arr)[N]) noexcept { return arr; }
+inline constexpr T* begin(T (&arr)[N]) noexcept { return arr; }
+
+template<typename Container>
+inline constexpr auto cbegin(Container const& c) {
+    return geko::iterator::begin(c);
+}
 
 }
 }
