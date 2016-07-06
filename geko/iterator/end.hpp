@@ -14,9 +14,9 @@ namespace geko {
 namespace iterator {
 
 template<typename Con>
-inline constexpr auto end(Con& con) { return c.end(); }
+inline constexpr auto end(Con& c) { return c.end(); }
 template<typename Con>
-inline constexpr auto end(Con const& con) { return c.end(); }
+inline constexpr auto end(Con const& c) { return c.end(); }
 
 template<typename T, std::size_t N>
 inline constexpr T* end(T (&arr)[N]) noexcept { return arr + N; }

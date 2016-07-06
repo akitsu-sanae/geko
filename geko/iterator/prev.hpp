@@ -15,7 +15,7 @@ namespace geko {
 namespace iterator {
 
 template<typename BidirIterator>
-BidirIterator next(
+BidirIterator prev(
         BidirIterator it,
         typename geko::iterator::iterator_traits<BidirIterator>::difference_type n) {
     std::advance(it, -n);

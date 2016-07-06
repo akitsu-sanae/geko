@@ -8,6 +8,7 @@
 #ifndef GEKO_ITERATOR_ITERATOR_HPP
 #define GEKO_ITERATOR_ITERATOR_HPP
 
+#include <utility> // for std::move
 #include <cstddef>
 
 namespace geko {

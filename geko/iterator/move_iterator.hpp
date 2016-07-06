@@ -29,7 +29,7 @@ struct move_iterator {
     move_iterator() :
         current()
     {}
-    explicit move_iterator(It i) :
+    explicit move_iterator(It it) :
         current(it)
     {}
     template<typename T> move_iterator(move_iterator<T> const& u) :
@@ -114,18 +114,18 @@ operator>=(move_iterator<It1> const& lhs, move_iterator<It2> const& rhs) {
 template<typename It1, typename It2>
 constexpr inline auto
 operator-(move_iterator<It1> const& lhs, move_iterator<It2> const& rhs) {
-    return x.base() - y.base();
+    return lhs.base() - rhs.base();
 }
 template<typename It>
 constexpr inline auto
 operator+(typename move_iterator<It>::difference_type n, move_iterator<It> const& rhs) {
-    return x + n;
+    return rhs + n;
 }
 
 template<typename It>
 constexpr inline auto
 make_move_iterator(It i) {
-    move_iterator<It>(i);
+    return move_iterator<It>(i);
 }
 
 }

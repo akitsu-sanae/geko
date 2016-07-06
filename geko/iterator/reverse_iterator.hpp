@@ -21,12 +21,12 @@ template<typename It>
         typename geko::iterator::iterator_traits<It>::value_type,
         typename geko::iterator::iterator_traits<It>::difference_type,
         typename geko::iterator::iterator_traits<It>::pointer,
-        typename geko::iterator::iterator_traits<It>::reference>
+        typename geko::iterator::iterator_traits<It>::reference
         >
 {
 
     // member types
-    using iterator_type = Iterator;
+    using iterator_type = It;
     using difference_type = typename iterator_traits<It>::difference_type;
     using pointer = typename iterator_traits<It>::pointer;
     using reference = typename iterator_traits<It>::reference;

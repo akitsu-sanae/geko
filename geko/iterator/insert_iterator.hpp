@@ -14,7 +14,7 @@
 
 template<typename Container>
 struct insert_iterator :
-    public geko::iterator<
+    public geko::iterator::iterator<
         geko::iterator::output_iterator_tag,
         void, void, void, void>
 {

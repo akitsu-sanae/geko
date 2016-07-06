@@ -17,7 +17,7 @@ namespace iterator {
 
 template<typename Container>
 struct front_insert_iterator :
-    public geko::iterator<
+    public geko::iterator::iterator<
         geko::iterator::output_iterator_tag,
         void, void, void, void>
 {
@@ -49,7 +49,7 @@ protected:
 
 template<typename Container>
 inline constexpr front_insert_iterator<Container>
-front_insert_iterator(Container& c) {
+front_inserter(Container& c) {
     return front_insert_iterator<Container>(c);
 }
 
