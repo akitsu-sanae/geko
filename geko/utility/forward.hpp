@@ -5,12 +5,20 @@
   file LICENSE or copy at http://www.boost.org/LICENSE_1_0.txt)
 ============================================================================*/
 
+#ifndef GEKO_UTILITY_FORWARD_HPP
+#define GEKO_UTILITY_FORWARD_HPP
 
-#ifndef GEKO_UTILITY_HPP
-#define GEKO_UTILITY_HPP
+namespace geko {
+namespace utility {
 
-#include <geko/utility/move.hpp>
-#include <geko/utility/forward.hpp>
+template<typename T, typename U>
+inline T&&
+forward(U&& u) noexcept {
+    return static_cast<T&&>(u);
+}
+
+}
+}
 
 #endif
 
