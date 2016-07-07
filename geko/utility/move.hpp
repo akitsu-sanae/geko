@@ -16,7 +16,7 @@ namespace utility {
 
 template<typename T>
 inline constexpr typename std::remove_reference<T>::type&&
-move(T&& t) {
+move(T&& t) noexcept {
     return static_cast<typename std::remove_reference<T>::type&&>(t);
 }
 
