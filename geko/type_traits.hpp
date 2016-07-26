@@ -24,6 +24,7 @@
 #include <geko/type_traits/is_pointer.hpp>
 #include <geko/type_traits/is_lvalue_reference.hpp>
 #include <grko/type_traits/is_rvalue_reference.hpp>
+#include <geko/type_traits/is_reference_wrapper.hpp>
 
 #endif
 
